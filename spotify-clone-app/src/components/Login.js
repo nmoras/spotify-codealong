@@ -8,7 +8,7 @@ function Login() {
             <img src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg"
             alt="logo"
             />
-            <a >LOGIN TO SPOTIFY</a>
+            <a href={accessUrl}>LOGIN TO SPOTIFY</a>
         </div>
     )
 }
