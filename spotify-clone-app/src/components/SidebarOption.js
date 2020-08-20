@@ -3,9 +3,8 @@ import React from 'react'
 function SidebarOption({ title, Icon }) {
     return (
         <div className="sidebarOption">
-            <p>
-                
-            </p>
+         {Icon && <Icon className="sidebarOption_icon"></Icon>}   
+         {Icon ? <h4>{title}</h4> : <p>{title}</p>}
             
         </div>
     )
