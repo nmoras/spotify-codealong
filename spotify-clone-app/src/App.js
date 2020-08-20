@@ -37,7 +37,7 @@ function App() {
     }
 
     console.log('i have token', token)
-  }, []);
+  }, [dispatch]);
 
   return (
     //BEM convention
