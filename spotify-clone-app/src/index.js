@@ -4,13 +4,13 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { DataLayer } from './DataLayer';
-import { initialState } from './reducer';
+import reducer, { initialState } from './reducer';
 
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <DataLayer intialState={initialState} reducer>
+    <DataLayer intialState={initialState} reducer={reducer}>
       <App />
     </DataLayer>
   </React.StrictMode>,
