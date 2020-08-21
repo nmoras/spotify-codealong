@@ -1,8 +1,9 @@
 import React from 'react'
 
-function Body() {
+function Body( {spotify} ) {
     return (
-        <div>
+        <div className="body">
+            <Header  spotify={spotify} />
             
         </div>
     )
