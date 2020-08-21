@@ -4,5 +4,20 @@
     background: linear-gradient(rgb(95, 87, 115));
     height: 100vh;
     padding: 30px;
+}
+.body_info{
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
 
+.body_infoText > p {
+    font-size: 14px;
+}
+
+.body_info > img {
+    height: 20vw;
+    margin: 0 20px;
+    box-shadow: 0 4px 60px;
+    /* rgba(0, 0, 115) */
 }
