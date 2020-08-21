@@ -30,8 +30,8 @@
     justify-content: space-between;
     align-items: center;
     color: white;
-
 }
+
 .footer_albumLogo{
     height: 60px;
     width: 60px;
@@ -49,4 +49,15 @@
 
 .footer_songInfo > h4 {
     margin-bottom: 5px;
+}
+
+.footer_icon:hover,
+.footer_green:hover {
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.2) !important;
+}
+
+/* go to footer_right and * any material Ui slider  make it green */
+.footer_right * .MuiSlider-root{
+    color: green;
 }
