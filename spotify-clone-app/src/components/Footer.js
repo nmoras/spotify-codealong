@@ -8,17 +8,31 @@ import RepeatIcon from '@material-ui/icons/Repeat';
 import { Grid, Slider } from '@material-ui/core';
 import PlaylistPlayIcon from '@material-ui/icons/PlaylistPlay';
 import VolumeDownIcon from '@material-ui/icons/VolumeDown';
+import { useDataLayerValue } from '../DataLayer';
 
-function Footer() {
+
+function Footer( {spotify} ) {
+    const [ {token, item, playing }, dispatch] = useDataLayerValue();
+
     return (
         <div className="footer">
             <div className="footer_left">
-                <img className="footer_albumLogo" src="" alt="" />
+                <img className="footer_albumLogo" 
+                src={item?.album.images[0].url} 
+                alt="" />
+
+                { item ? (
                 <div className="footer_songInfo">
-                    <h4></h4>
-                    <p></p>
+                    <h4>{item.name}</h4>
+                    <p>{item.artists.map((artists) => artists.name).join(",")}</p>
                 </div>
+                ) :
+                ( <div className="footer_songInfo">
+                    <h4>No song is playing</h4>
+                    <p>...</p>
+                </div> )}
             </div>
+            
             <div className="footer_center">
                 <ShuffleIcon className="footer_green" />
                 <SkipPreviousIcon className="footer_icon" />
