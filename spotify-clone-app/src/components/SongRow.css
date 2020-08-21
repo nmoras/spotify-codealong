@@ -24,3 +24,8 @@
     margin-top: 3px;
     color: gray;
 }
+
+.songRow_album{
+    height: 40px;
+    width: 40px;
+}

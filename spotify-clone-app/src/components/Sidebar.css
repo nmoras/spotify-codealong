@@ -15,11 +15,11 @@
     height: 70px;
     padding: 10px;
     margin-right: auto;
+    object-fit: contain;
 }
 
 .sidebar_title{
     margin-left: 10px;
     padding: 5px;
     font-size: 12px;
-    object-fit: contain;
 }
