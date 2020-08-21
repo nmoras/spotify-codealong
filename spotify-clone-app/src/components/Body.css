@@ -21,3 +21,27 @@
     box-shadow: 0 4px 60px;
     /* rgba(0, 0, 115) */
 }
+
+.body_icons{
+
+    display: flex;
+    align-items: center;
+}
+
+.body_icons > .MuiSvgIcon-root {
+    margin-right: 20px;
+}
+
+.body_shuffle {
+    font-size: 80px !important;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.body_shuffle:hover{
+    transition: 100ms transform ease-in;
+    transform: scale(1.08)
+}
+
+
