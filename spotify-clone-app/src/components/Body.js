@@ -1,6 +1,9 @@
 import React from 'react'
+import { useDataLayerValue } from '../DataLayer'
 
 function Body( {spotify} ) {
+    const [{ discover_weekly}, dispatch] = useDataLayerValue();
+    
     return (
         <div className="body">
             <Header  spotify={spotify} />
