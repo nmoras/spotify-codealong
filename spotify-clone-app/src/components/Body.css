@@ -1,9 +1,13 @@
 .body{
     flex: 0.8;
-    background-color: rgb(91, 87, 115);
     background: linear-gradient(rgb(95, 87, 115));
     height: 100vh;
     padding: 30px;
+    overflow-y: overlay;
+}
+
+.body::-webkit-scrollbar{
+    display: none;
 }
 .body_info{
     display: flex;
